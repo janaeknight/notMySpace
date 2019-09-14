@@ -1,18 +1,31 @@
 html {
     background:url(http://www.fillster.com/images/backgrounds/213l.gif);
-    background-attachment: fixed; background-repeat: repeat;}
+    background:url(https://media.giphy.com/media/Jg8lQuN57NuBa/giphy.gif); 
+    background-repeat: repeat;
+}
 body {
-    display: flex; width: 95vw;
+    width: 95vw;
     margin-left: auto; margin-right: auto;
-    padding-left: 20px; padding-right: 15px; padding-top: 30px;
     background: transparent;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.contentbody {
+    display: flex;
+}
+header {
+    display: flex; flex-direction: row;
+    top: 0; left: 0;
+    background-color: #003399;
+}
+header img {
+    max-width: 120px;
 }
 .box { 
-    background-color: rgba(216, 106, 246, 1);
-    border: 2px solid pink;
-    outline: 5px solid gray;
+    background-color: rgba(184, 163, 189, 0.95);
+    border: 2px solid gray;
+    outline: 3px solid greenyellow;
     margin-left: 25px; margin-bottom: 20px; 
-    padding-left: 15px; padding-top: 15px;
+    padding-left: 15px; padding-top: 5px; padding-bottom: 5px;
 }
 /*#################### LEFT ####################*/
 .left { width: 35%; }
