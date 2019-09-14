@@ -1,11 +1,25 @@
-html { background-color: lavender;}
+html {
+    background:url(http://www.fillster.com/images/backgrounds/213l.gif);
+    background-attachment: fixed; background-repeat: repeat;}
 body {
-    display: flex; width: 85vw;
+    display: flex; width: 95vw;
     margin-left: auto; margin-right: auto;
-    /*background: transparent;*/
+    padding-left: 20px; padding-right: 15px; padding-top: 30px;
+    background: transparent;
+}
+.box { 
+    background-color: rgba(216, 106, 246, 1);
+    border: 2px solid pink;
+    outline: 5px solid gray;
+    margin-left: 25px; margin-bottom: 20px; 
+    padding-left: 15px; padding-top: 15px;
 }
 /*#################### LEFT ####################*/
-.left { width: 45%; }
+.left { width: 35%; }
+img {width: 50%;}
+.userbox {
+    display: flex;
+}
 .detailsbox {
     display: flex; flex-direction: column;
 }
@@ -15,4 +29,4 @@ body {
 .db-left { width: 30%; }
 
 /*#################### RIGHT ####################*/
-.right { width: 55%; }
+.right { width: 65%; }
