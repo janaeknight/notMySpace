@@ -76,11 +76,13 @@ img {width: 50%;}
 .sdb {
     display: flex;
 }
+.db-1 { width: 10%; }
 .db-2 { width: 20%; }
 .db-3 { width: 30%; }
 .db-4 { width: 40%; }
 .db-5 { width: 50%; }
 .db-6 { width: 60%; }
+.db-8 { width: 80%; }
 /*#################### RIGHT ####################*/
 .right { width: 65%; }
 .friends {
@@ -93,4 +95,10 @@ img {width: 50%;}
     padding-top: 5px;
 }
 .friend { width: 25%; }
-.comment { display: flex;}
+.stickers { display: flex; justify-content: space-between; text-align: center; }
+.comments {display: flex; flex-direction: column; }
+.comment { display: flex; flex-direction: row; }
+.comment img {width: 80%; }
+.comment p {
+    margin-right: 25px;
+}
