@@ -11,24 +11,44 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     cursor: url(http://www.fillster.com/myspace-cursors/21.ani), url(http://www.fillster.com/myspace-cursors/21.gif), pointer !important;
 }
+.txt-right { text-align: right; }
 .contentbody {
     display: flex;
 }
 header {
+    width: auto; height: auto;
     display: flex; flex-direction: column;
     top: 0; left: 0; margin-left: -40px; margin-right: -40px; margin-top: -20px; margin-bottom: 20px;
-    padding-top: 10px; padding-bottom: 5px;
-    padding-left: 20px;
+    padding-top: 15px; padding-bottom: 5px; padding-left: 25px;
     background-color: #003399;
 }
+header a {
+    color: white; text-decoration: none;
+}
 header img {
-    max-width: 120px;
+    max-width: 150px;
 }
 .head-top, .head-bottom {
     display: flex; flex-direction: row;
+    width: auto;
+}
+.head-bottom {
+    padding-top: 5px;
 }
 .head-left {
     width: 50%;
+}
+.hl-left a {
+    padding-left: 10px; padding-right: 10px;
+    border-right: 2px inset darkblue;
+}
+.hl-right a {
+    padding-left: 10px; padding-right: 10px;
+    border-left: 2px inset darkblue;
+}
+.head-right {
+    align-self: right !important; align-content: flex-end !important;
+    justify-content: flex-end !important; align-items: flex-end !important;
 }
 .box { 
     background-color: rgba(184, 163, 189, 0.95);
@@ -43,13 +63,25 @@ img {width: 50%;}
 .userbox {
     display: flex;
 }
+.contactbox img{
+    width: 75%;
+}
 .detailsbox {
     display: flex; flex-direction: column;
 }
 .sdb {
     display: flex;
 }
-.db-left { width: 30%; }
-
+.db-3 { width: 30%; }
+.db-5 { width: 50%; }
 /*#################### RIGHT ####################*/
 .right { width: 65%; }
+.friends {
+    display: flex;
+    padding-left: 5px; padding-bottom: 10px;
+}
+.friends img {
+    margin-left: auto; margin-right: auto;
+    padding-top: 5px;
+}
+.friend { width: 25%; }
