@@ -76,8 +76,11 @@ img {width: 50%;}
 .sdb {
     display: flex;
 }
+.db-2 { width: 20%; }
 .db-3 { width: 30%; }
+.db-4 { width: 40%; }
 .db-5 { width: 50%; }
+.db-6 { width: 60%; }
 /*#################### RIGHT ####################*/
 .right { width: 65%; }
 .friends {
@@ -90,3 +93,4 @@ img {width: 50%;}
     padding-top: 5px;
 }
 .friend { width: 25%; }
+.comment { display: flex;}
