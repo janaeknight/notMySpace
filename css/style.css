@@ -83,6 +83,9 @@ img {width: 50%;}
 .db-5 { width: 50%; }
 .db-6 { width: 60%; }
 .db-8 { width: 80%; }
+.adbox img {
+    width: 90%; padding-left: 20px;
+}
 /*#################### RIGHT ####################*/
 .right { width: 65%; }
 .friends {
