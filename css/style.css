@@ -10,9 +10,13 @@ body {
     margin-left: auto; margin-right: auto;
     background: transparent;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    cursor: url(http://www.fillster.com/myspace-cursors/21.ani), url(http://www.fillster.com/myspace-cursors/21.gif), pointer !important;
+    cursor: url(http://cur.cursors-4u.net/cursors/cur-1/cur1.ani), url(http://cur.cursors-4u.net/cursors/cur-1/cur1.png), auto !important;
+} /*http://www.htmate.com/cursors/images/blue_lightning.ani*/
+body a {
+    cursor: url(http://cur.cursors-4u.net/others/oth-9/oth827.ani), url(http://cur.cursors-4u.net/others/oth-9/oth828.cur), pointer !important;
 }
 .txt-right { text-align: right; }
+.txt-type { font-family: "Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace; }
 .contentbody {
     display: flex;
 }
@@ -64,16 +68,11 @@ header img {
 img {width: 50%;}
 /*#################### LEFT ####################*/
 .left { width: 35%; }
-.userbox {
-    display: flex;
-}
+.userbox { display: flex; }
+.userimg { justify-content: space-between; text-align: center; }
 .userimg img { width: 90%; padding-top: 10px;}
-.contactbox img {
-    width: 75%;
-}
-.detailsbox {
-    display: flex; flex-direction: column;
-}
+.contactbox img { width: 75%; }
+.detailsbox { display: flex; flex-direction: column; }
 .sdb {
     display: flex;
 }
