@@ -18,23 +18,18 @@ body a {
 .txt-right { justify-content: space-between; text-align: right; }
 .txt-center { justify-content: space-between; text-align: center;}
 .txt-type { font-family: "Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace; }
-.contentbody {
-    display: flex;
+
+
+.contentbody { display: flex; padding-bottom: 20px; }
+img {width: 50%;}
+.box { 
+    background-color: rgba(184, 163, 189, 0.95);
+    border: 2px solid gray;
+    outline: 3px solid greenyellow;
+    margin-left: 15px; margin-bottom: 20px; 
+    padding-left: 15px; padding-top: 5px; padding-bottom: 5px;
 }
-/**/
-.drop-content {
-    display: none; position: absolute; 
-    background-color: skyblue; 
-    min-width: 160px; min-height: 40px; 
-    padding-top: 5px; padding-bottom: 5px;
-    z-index: 1;
-}
-.drop-content a {
-    display: block; padding-top: 5px; padding-bottom: 5px;
-}
-.nav-drop {position: relative; display: inline-block;}
-.nav-drop:hover .drop-content {display: block;}
-/**/
+            /*#################### HEADER ####################*/
 header {
     width: auto; height: auto;
     display: flex; flex-direction: column;
@@ -42,25 +37,15 @@ header {
     padding-top: 15px; padding-bottom: 5px; padding-left: 25px;
     background-color: #003399;
 }
-header a {
-    color: white; text-decoration: none;
-}
-header img {
-    max-width: 150px;
-}
-.head-right {
-    display: block; text-align: right;
-}
+header a { color: white; text-decoration: none; }
+header img { max-width: 150px; }
+.head-right { display: block; text-align: right; }
 .head-top, .head-bottom {
     display: flex; flex-direction: row;
     width: auto;
 }
-.head-bottom {
-    padding-top: 5px;
-}
-.head-left {
-    width: 70%;
-}
+.head-bottom { padding-top: 5px;}
+.head-left { width: 70%; }
 .hl-left a {
     padding-left: 10px; padding-right: 10px;
     border-right: 2px inset darkblue;
@@ -73,15 +58,33 @@ header img {
     position: absolute; right: 0;
     padding-right: 10px;
 }
-.box { 
-    background-color: rgba(184, 163, 189, 0.95);
-    border: 2px solid gray;
-    outline: 3px solid greenyellow;
-    margin-left: 15px; margin-bottom: 20px; 
-    padding-left: 15px; padding-top: 5px; padding-bottom: 5px;
+.drop-content {
+    display: none; position: absolute; 
+    background-color: skyblue; 
+    min-width: 160px; min-height: 40px; 
+    padding-top: 5px; padding-bottom: 5px;
+    z-index: 1;
 }
-img {width: 50%;}
-/*#################### LEFT ####################*/
+.drop-content a {
+    display: block; padding-top: 5px; padding-bottom: 5px;
+}
+.nav-drop {position: relative; display: inline-block;}
+.nav-drop:hover .drop-content {display: block;}
+            /*#################### FOOTER ####################*/
+footer {
+    width: auto; height: auto;
+    display: block;
+    bottom: 0;
+    padding-top: 25px; margin-left: -40px; margin-right: -40px; margin-bottom: -80px;
+    background-color: #003399; color: snow;
+}
+footer a {
+    color: snow; text-decoration: underline;
+}
+.f-row {
+    text-align: center; padding-bottom: 20px;
+}
+            /*#################### LEFT ####################*/
 .left { width: 35%; }
 .userbox { display: flex; }
 .userimg { justify-content: space-between; text-align: center; }
@@ -102,7 +105,7 @@ img {width: 50%;}
 .adbox img {
     width: 90%; padding-left: 20px;
 }
-/*#################### RIGHT ####################*/
+            /*#################### RIGHT ####################*/
 .right { width: 65%; }
 .friends {
     display: flex; justify-content: space-between;
