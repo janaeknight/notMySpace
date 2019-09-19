@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>notMySpace.com - ~♡ girl with hat~ - 19 - Female - Mississippi</title>
     <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
     <!-- Wubba lubba dub dub -->
     <!-- You remind me of Hades, and I'm kinda digging it.
     "Online teen romances are kinda fun" ~Jake
@@ -213,7 +215,7 @@
             <h3>myMusic</h3>
             <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Random Mix, P1</b></span>
             <iframe src="" allow="autoplay" id="audio" style="display:none"></iframe>
-            <audio controls autoplay loop>
+            <audio controls loop>
                 <source src="css/media/music/randomMix.mp3" type="audio/mpeg">
             </audio>
         </div>
@@ -269,32 +271,59 @@
             </div>
         </div>
         <div class="box commentbox">
-            <h2>Comments (Top 4) </h2>
-            <div class="comments">
-                <div class="comment">
-                    <div class="db-2">
-                        <a href="#link"><img src="css/media/whiteguyonboat.png" alt=""></a>
-                    </div>
-                    <div class="db-8">
-                        <p>
-                            <b>Old Money (REAL)</b> <i>says...</i><span class="txt-type">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Oct 22 2009&nbsp;&nbsp;7:22PM</b></span></br></br>
-                            Do something useful with your life... get me a beer!</br>
-                        </p>
-                    </div>
-                </div>
-                <div class="comment">
-                    <div class="db-2">
-                        <a href="#link"><img src="css/media/girlfriend.png" alt=""></a>
-                    </div>
-                    <div class="db-8">
-                        <p>
-                            <b>Laina Morris</b> <i>says...</i><span class="txt-type">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Oct 19 2009&nbsp;&nbsp;7:22PM</b></span></br></br>
-                            Can we leave the light on tonight? I want to be able to watch you sleep. It's been over 10 minutes since you last said you love me... <i>are you breaking up with me?</i> Ran into your ex with my car ;) Your mother must be the luckiest woman alive to have you inside her for 9 whole months. I sign things with your last name for practice. We need to talk about what I found on page 17 when I Googled your name.</br>
-                        </p>
-                    </div>
+            <div class="comments-top">
+                <h2 class="db-4">Comments (Top 4) </h2>
+                <div class="commentbuttons db-8 txt-right">
+                    <a href="#link" id="cb1">1</a>
+                    <a href="#link" id="cb2">2</a>
+                    <a href="#link" id="cb3">3</a>
+                    <a href="#link" id="cb1">4</a>
+                    <a href="#link" id="cb1">5</a>
+                    <a href="#link" id="cb1">6</a>
                 </div>
             </div>
-        </div>
+            <div id="cp1">
+                <div class="comments">
+                    <div class="comment">
+                        <div class="db-2">
+                            <a href="#link"><img src="css/media/whiteguyonboat.png" alt=""></a>
+                        </div>
+                        <div class="comment-text db-8">
+                            <div class="cmnt-txt">
+                                <div class="comment-head txt-type">
+                                    <div class="db-6">
+                                        <b>Old Money (REAL)</b> <i>says...</i>
+                                    </div>
+                                    <div class="db-4 txt-right">
+                                        <span><b>Oct 22 2009&nbsp;&nbsp;7:22PM</b></span>
+                                    </div>
+                                </div> <!--comment-head-->
+                                <span>Do something useful with your life... get me a beer!</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <div class="db-2">
+                            <a href="#link"><img src="css/media/girlfriend.png" alt=""></a>
+                        </div>
+                        <div class="comment-text db-8">
+                            <div class="cmnt-txt">
+                                <div class="comment-head txt-type">
+                                    <div class="db-6">
+                                        <span><b>Laina Morris</b> <i>says...</i></span>
+                                    </div>
+                                    <div class="db-4 txt-right">
+                                        <span><b>Oct 19 2009&nbsp;&nbsp;7:22PM</b></span>
+                                    </div>
+                                </div> <!--comment-head-->
+                                <span>Can we leave the light on tonight? I want to be able to watch you sleep. It's been over 10 minutes since you last said you love me... <i>are you breaking up with me?</i> Ran into your ex with my car ;) Your mother must be the luckiest woman alive to have you inside her for 9 whole months. I sign things with your last name for practice. We need to talk about what I found on page 17 when I Googled your name.</span>
+                            </div> <!--cmnt-text-->
+                        </div> <!--comment-txt-->
+                    </div> <!--comment-->
+                </div>
+            </div><!--page1-->
+            
+        </div> <!--comments container-->
         <div class="box puzzlebox">
                 <embed src="http://www.htmate.com/puzzle/show.swf?baseURL=http://www.htmate.com/puzzle/&clickURL=http://www.htmate.com/puzzle/&clickLABEL=Click here to Create your puzzle&type=0&picture=http://www.htmate.com/puzzle/uploads/pic156864349194977700053.jpg&pieceColorOff=13421772&pieceColorOn=16711680&borderColor=16777215&pieceBorder=3&rezX=6&rezY=5&message=Congratulations%21%21%21%20You%27ve%20finished%20the%20puzzle%21%21%21" quality="high" background="#ffffff" width="400" height="300" name="show" text-align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" /><br><a href="http://www.htmate.com/puzzle/" target="_blank">Click here to Create your puzzle</a>
         </div>
@@ -332,6 +361,35 @@
             </span>
         </div>
     </footer>
+    <script>
+        $(function() {
+            $( "#cb1" ).click(function() {
+                $( "#cp2" ).hide();
+                $( "#cp3" ).hide();
+                $( "#cp4" ).hide();
+                $( "#cp5" ).hide();
+                $( "#cp6" ).hide();
+                $( "#cp1" ).show();
+            });
+    
+            $( "#cb2" ).click(function() {
+                $( "#cp1" ).hide();
+                $( "#cp3" ).hide();
+                $( "#cp4" ).hide();
+                $( "#cp5" ).hide();
+                $( "#cp6" ).hide();
+                $( "#cp2" ).show();
+            });
 
+            $( "#cb3" ).click(function() {
+                $( "#cp1" ).hide();
+                $( "#cp2" ).hide();
+                $( "#cp4" ).hide();
+                $( "#cp5" ).hide();
+                $( "#cp6" ).hide();
+                $( "#cp3" ).show();
+            });
+        })
+    </script>
 </body>
 </html>

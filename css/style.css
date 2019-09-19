@@ -40,10 +40,7 @@ header {
 header a { color: white; text-decoration: none; }
 header img { max-width: 150px; }
 .head-right { display: block; text-align: right; }
-.head-top, .head-bottom {
-    display: flex; flex-direction: row;
-    width: auto;
-}
+.head-top, .head-bottom { display: flex; flex-direction: row; width: auto; }
 .head-bottom { padding-top: 5px;}
 .head-left { width: 70%; }
 .hl-left a {
@@ -65,9 +62,7 @@ header img { max-width: 150px; }
     padding-top: 5px; padding-bottom: 5px;
     z-index: 1;
 }
-.drop-content a {
-    display: block; padding-top: 5px; padding-bottom: 5px;
-}
+.drop-content a { display: block; padding-top: 5px; padding-bottom: 5px;  }
 .nav-drop {position: relative; display: inline-block;}
 .nav-drop:hover .drop-content {display: block;}
             /*#################### FOOTER ####################*/
@@ -117,9 +112,18 @@ footer a {
 }
 .friend { width: 25%; }
 .stickers { display: flex; justify-content: space-between; text-align: center; }
-.comments {display: flex; flex-direction: column; }
-.comment { display: flex; flex-direction: row; }
-.comment img {width: 80%; }
-.comment p {
-    margin-right: 25px;
+.comments-top {display: flex; flex-direction: row; }
+#cp2 {
+    display: none;
 }
+.comments {display: flex; flex-direction: column; }
+.commentbuttons { margin-right: 10px; margin-top: 15px;}
+.commentbuttons a {
+    color: blue; text-decoration: underline;
+    border: none; background: none;
+    padding-left: 3px; padding-right: 3px;
+}
+.comment { display: flex; flex-direction: row; margin-right: 25px; }
+.comment img {width: 80%; }
+.comment-text { display: flex; flex-direction: column; }
+.comment-head {display: flex; flex-direction: row; padding-bottom: 20px;}
