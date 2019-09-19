@@ -74,9 +74,8 @@ header img { max-width: 150px; }
 footer {
     width: auto; height: auto;
     display: block;
-    bottom: 0;
     padding-top: 25px; margin-left: -40px; margin-right: -40px; margin-bottom: -80px;
-    background-color: #003399; color: snow;
+    color: snow;
 }
 footer a {
     color: snow; text-decoration: underline;
