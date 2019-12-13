@@ -118,3 +118,21 @@ footer a { color: snow; text-decoration: underline; }
 .comment-text { display: flex; flex-direction: column; }
 .comment-head {display: flex; flex-direction: row; padding-bottom: 20px;}
 .comment-text img {max-width: 90px;}
+#mobilewarning { display: none; }
+@media screen and (max-width: 1059px ) {
+    .contentbody, header, footer { display: none !important; }
+    body { height: 95vh; }
+    #mobilewarning {
+        background-color: #003399 !important;
+        width: 85vw; min-height: 80vh;
+        display: block; margin: auto;
+        margin-top: 40px; color: snow;
+    }
+    #mobilewarning img {
+        margin: 5% 0; padding-bottom: 5%;
+    }
+    #mobilewarning h1 {
+        margin: 0 20%; padding: 10px 0;
+        font-size: 45px;
+    }
+}
