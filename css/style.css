@@ -1,7 +1,7 @@
 html {
     background-color: #003399;
     background:url(http://www.fillster.com/images/backgrounds/213l.gif);
-    background:url(https://i.ibb.co/wBjHmsv/glitch.gif);
+    background:url(../glitch.gif);
     background-repeat: repeat;
     overflow-x: hidden;
 }
@@ -10,10 +10,10 @@ body {
     margin-left: auto; margin-right: auto;
     background: transparent;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    cursor: url(http://cur.cursors-4u.net/cursors/cur-1/cur1.ani), url(http://cur.cursors-4u.net/cursors/cur-1/cur1.png), auto !important;
-} /*http://www.htmate.com/cursors/images/blue_lightning.ani*/
+    cursor: url(../cur1.ani), url(../cur1.png), auto !important;
+}
 body a {
-    cursor: url(http://cur.cursors-4u.net/others/oth-9/oth827.ani), url(http://cur.cursors-4u.net/others/oth-9/oth828.cur), pointer !important;
+    cursor: url(../oth827.ani), url(../oth828.cur), pointer !important;
 }
 .txt-right { justify-content: space-between; text-align: right; }
 .txt-center { justify-content: space-between; text-align: center;}
